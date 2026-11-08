@@ -1,9 +1,9 @@
 # 50-Chip Pool Ceiling and Query Allocation
 
-Full-pool ceiling on 50 chips (five per class). CALD uses \(Q=N_p=10\);
-transfer uses \(Q=0\); NES uses \(Q=512\).
+Full-pool ceiling on 50 chips (five per class). CALD uses $Q=N_p=10$;
+transfer uses $Q=0$; NES uses $Q=512$.
 
-| Dataset | \(K\) | Arm | \(Q\) | Source succ. (%) | Candidate succ. (%) | \(C_{\mathrm{nom}}\) (%) | Accuracy (%) [95% CI] | Confidence | \(\Gamma\) (pp) |
+| Dataset | $K$ | Arm | $Q$ | Source succ. (%) | Candidate succ. (%) | $C_{\mathrm{nom}}$ (%) | Accuracy (%) [95% CI] | Confidence | $\Gamma$ (pp) |
 |---|---:|---|---:|---:|---:|---:|---:|---:|---:|
 | MSTAR | 10 | CALD | 10 | 95.2 | 56.2 | 62.0 | 62.0 [48.2, 74.1] | 0.61 | 0.0 |
 | MSTAR | 10 | transfer | 0 | 95.2 | 56.2 | 62.0 | 54.0 [40.4, 67.0] | 0.54 | 8.0 |
@@ -21,10 +21,10 @@ transfer uses \(Q=0\); NES uses \(Q=512\).
 Notes:
 
 - Source success is measured on the surrogate; candidate success and
-  \(C_{\mathrm{nom}}\) are measured on the hidden target.
-- Negative \(\Gamma\) on the SAMPLE \(K=20\) transfer row means the transfer
+  $C_{\mathrm{nom}}$ are measured on the hidden target.
+- Negative $\Gamma$ on the SAMPLE $K=20$ transfer row means the transfer
   layout lies outside the ten-candidate pool; the pool ceiling is specific to
   this pool and is not a universal bound.
-- CIs are Wilson 95% intervals; \(n=50\) for CALD/transfer and \(n=20\) for NES.
-- CALD at \(Q=N_p\) attains the pool ceiling by construction whenever at least
+- CIs are Wilson 95% intervals; $n=50$ for CALD/transfer and $n=20$ for NES.
+- CALD at $Q=N_p$ attains the pool ceiling by construction whenever at least
   one candidate succeeds.
